@@ -1,0 +1,14 @@
+{
+  "maps": {
+    "waldo": {
+      "characters": {
+        "waldo": {
+          "x": 123,
+          "y": 486
+        }
+      }
+    }
+  },
+  "sessions": {
+  }
+}
