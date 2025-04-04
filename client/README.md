@@ -1,12 +1,87 @@
-# React + Vite
+# Where's Waldo? Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web implementation of the classic Where's Waldo? game, built with React and Vite. Find hidden characters in various themed maps while competing for the fastest completion times!
 
-Currently, two official plugins are available:
+## 🎮 How to Play
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Select a map from the main menu
+2. Find all the hidden characters in the image
+3. Use the following controls:
+   - Left-click + drag to pan around the image
+   - Right-click to make a character selection
+   - Mouse wheel to zoom in/out
+4. Click on character portraits in the top bar to see larger versions
+5. Try to find all characters as quickly as possible to set a new high score!
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Multiple themed maps (Classic Waldo, League of Legends, One Piece)
+- Interactive pan and zoom controls
+- Real-time character tracking
+- High score system
+- Responsive design
+- Visual feedback for found characters
+- Character preview system
+
+## 🛠️ Technical Stack
+
+- **Frontend:**
+  - React 19
+  - Vite 6
+  - CSS3 with modern animations
+  - Context API for state management
+
+- **Backend Dependencies:**
+  - Express.js server
+  - PostgreSQL database
+  - Railway for deployment
+
+## 🔧 Development Setup
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+cd client
+npm install
+```
+
+3. Set up environment variables:
+Create a `.env` file in the client directory with:
+```
+VITE_BASE_URL=your_backend_url
+```
+
+4. Start development server:
+```bash
+npm run dev
+```
+
+## 📝 API Endpoints
+
+- `POST /game/start/:mapId` - Start a new game session
+- `POST /submitAnswer/:character` - Submit a character guess
+- `POST /game/:sessionId/end` - End a game session
+- `GET /highscores` - Retrieve high scores
+- `POST /highscores` - Submit a new high score
+
+## 🏗️ Project Structure
+
+```
+client/
+├── src/
+│   ├── assets/      # Character and game images
+│   ├── components/  # React components
+│   ├── App.jsx      # Main application component
+│   ├── App.css      # Global styles
+│   └── main.jsx     # Application entry point
+└── public/          # Static assets
+```
+
+
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+

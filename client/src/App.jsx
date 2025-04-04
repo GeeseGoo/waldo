@@ -5,9 +5,9 @@ import waldoImg from "./assets/waldo1.png";
 import bigguyImg from "./assets/op1.png";
 import littlemanImg from "./assets/op2.png";
 import ratImg from "./assets/op3.png";
-import robertearsImg from "./assets/league1.png";
-import roberttoesImg from "./assets/league2.png";
-import roberteyesImg from "./assets/league3.png";
+import PlantLadyImg from "./assets/league1.png";
+import kiddoImg from "./assets/league2.png";
+import snekImg from "./assets/league3.png";
 
 function App() {
   const [selectedMap, setSelectedMap] = useState(null);
@@ -46,13 +46,16 @@ function MainMenu({ onMapSelect }) {
   // Updated map images to use assets
   const maps = [
     { id: 'waldo', name: "Classic Waldo", image: "https://i.redd.it/cetpwklahlq61.jpg" },
-    { id: 'roberts', name: "Robert's Gooner Dungeon", image: "https://i.imgur.com/91z9w5T.jpg" },
-    { id: 'michaels', name: "Michael's Hentai Haven", image: "https://i.redd.it/iexleqhe0jb71.png" }
+    { id: 'roberts', name: "League Of Legends", image: "https://i.imgur.com/91z9w5T.jpg" },
+    { id: 'michaels', name: "One Piece", image: "https://i.redd.it/iexleqhe0jb71.png" }
   ];
   
   return (
     <div className="main-menu">
-      <h1 className="menu-title">Select a Map</h1>
+      <h1 className="menu-title">Where's Waldo?</h1>
+      <p className="menu-instructions">
+        Welcome to Where's Waldo! Select a map and find all the hidden characters. Right-click to make a guess when you spot someone. Can you find them all and set a new high score?
+      </p>
       
       <div className="map-grid">
         {maps.map(map => (
@@ -317,9 +320,9 @@ function GameImage({mapId, onBack, mapImg}) {
     bigguy: bigguyImg,
     littleman: littlemanImg,
     rat: ratImg,
-    robertears: robertearsImg,
-    roberttoes: roberttoesImg,
-    roberteyes: roberteyesImg
+    PlantLady: PlantLadyImg,
+    kiddo: kiddoImg,
+    snek: snekImg
   };
 
   return (

@@ -34,15 +34,15 @@ if (!fs.existsSync(dbPath)) {
       },
       roberts: {
         characters: {
-          robertears: {
+          PlantLady: {
             x: 321,
             y: 486
           },
-          roberttoes: {
+          kiddo: {
             x: 578,
             y: 612
           },
-          roberteyes: {
+          snek: {
             x: 834,
             y: 324
           }
