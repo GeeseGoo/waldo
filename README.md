@@ -3,7 +3,7 @@
 A modern web implementation of the classic Where's Waldo? game, built with React and Vite. Find hidden characters in various themed maps while competing for the fastest completion times!
 
 ## 🎮 How to Play
-Go To [whereswaldo.rocks](https://whereswaldo.rocks)
+Go To [whereswaldo.rocks](https://whereswaldo.rocks) (currently down for maintenance)
 1. Select a map from the main menu
 2. Find all the hidden characters in the image
 3. Use the following controls:
